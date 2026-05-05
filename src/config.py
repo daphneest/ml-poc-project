@@ -30,12 +30,10 @@ MODEL_METRICS_FILE = RESULTS_DIR / "model_metrics.csv"
 STREAMLIT_HOST = "localhost"
 STREAMLIT_PORT = 8501
 
-# Students must replace this example with their trained models.
-# Each entry must point to a serialized model saved as `.joblib`, `.pkl`, or `.pickle`.
 MODELS = {
-    "model_a": {
-        "name": "Model A",
-        "description": "A simple baseline model.",
-        "path": MODELS_DIR / "model_a.pkl",
+    "xgboost": {
+        "name": "XGBoost",
+        "description": "Meilleur modèle sélectionné après comparaison des 3 modèles en cross-validation.",
+        "path": MODELS_DIR / "xgboost.joblib",
     },
 }

@@ -317,3 +317,11 @@ http-client.private.env.json
 
 # Exclude logs directory
 logs/*
+# Data brutes
+data/*.json
+
+# Cache Python
+src/__pycache__/
+
+# macOS
+.DS_Store

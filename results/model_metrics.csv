@@ -1,0 +1,2 @@
+model_key,model_name,model_path,f1,precision,recall,auc_roc
+xgboost,XGBoost,/Users/daphneestoessel/ml-poc-project/models/xgboost.joblib,1.0,1.0,1.0,1.0
