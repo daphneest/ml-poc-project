@@ -31,9 +31,19 @@ STREAMLIT_HOST = "localhost"
 STREAMLIT_PORT = 8501
 
 MODELS = {
+    "logistic_regression": {
+        "name": "Régression Logistique",
+        "description": "Modèle de base linéaire. Rapide et interprétable.",
+        "path": MODELS_DIR / "logistic_regression.joblib",
+    },
+    "random_forest": {
+        "name": "Random Forest",
+        "description": "Ensemble d'arbres de décision. Robuste aux outliers.",
+        "path": MODELS_DIR / "random_forest.joblib",
+    },
     "xgboost": {
         "name": "XGBoost",
-        "description": "Meilleur modèle sélectionné après comparaison des 3 modèles en cross-validation.",
+        "description": "Gradient boosting. Meilleur modèle sélectionné.",
         "path": MODELS_DIR / "xgboost.joblib",
     },
 }

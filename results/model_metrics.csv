@@ -1,2 +1,4 @@
 model_key,model_name,model_path,f1,precision,recall,auc_roc
+logistic_regression,Régression Logistique,/Users/daphneestoessel/ml-poc-project/models/logistic_regression.joblib,0.8824,0.9109,0.8555,0.9098
+random_forest,Random Forest,/Users/daphneestoessel/ml-poc-project/models/random_forest.joblib,0.9972,0.9962,0.9981,0.9982
 xgboost,XGBoost,/Users/daphneestoessel/ml-poc-project/models/xgboost.joblib,1.0,1.0,1.0,1.0
