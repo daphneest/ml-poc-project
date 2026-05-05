@@ -115,8 +115,24 @@ def build_app() -> None:
             st.subheader("Métriques sur le jeu de test")
             st.dataframe(pd.read_csv(MODEL_METRICS_FILE), use_container_width=True)
 
-        st.subheader("Comparaison des modèles")
-        st.image('../plots/comparaison_modeles.png', use_container_width=True)
+        st.subheader("Signaux d'anomalie dans le dataset")
+        st.image('../plots/signaux_anomalie.png', use_container_width=True)
+
+        st.subheader("Comparaison des métriques (radar)")
+        col1, col2 = st.columns(2)
+        with col1:
+            st.image('../plots/radar_metriques.png', use_container_width=True)
+        with col2:
+            st.image('../plots/comparaison_modeles.png', use_container_width=True)
+
+        st.subheader("Courbes ROC")
+        st.image('../plots/roc_curves.png', use_container_width=True)
+
+        st.subheader("Matrices de confusion")
+        st.image('../plots/confusion_matrices.png', use_container_width=True)
+
+        st.subheader("Importance des features — XGBoost")
+        st.image('../plots/feature_importance.png', use_container_width=True)
 
         df = load_data()
         st.subheader("Top 20 marchés les plus suspects")
